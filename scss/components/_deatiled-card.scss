@@ -1,0 +1,27 @@
+.top-rated-experiences {
+  padding-bottom: 164px;
+
+  @include for-phone-only {
+    padding-bottom: 60px;
+  }
+
+  h3 {
+    padding-bottom: 80px;
+    text-align: center;
+    margin: auto;
+    max-width: 42%;
+
+    @include for-phone-only {
+      padding-bottom: 40px;
+      text-align: center;
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+.detailed-cards {
+  border: 0;
+  width: 286px;
+  padding: 0 12px;
+}

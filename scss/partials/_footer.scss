@@ -1,0 +1,176 @@
+footer {
+  background-color: $YUNGYellow;
+}
+
+.footer-credits {
+  padding: $space_80;
+
+  @include for-phone-only {
+    padding: 40px 20px;
+  }
+
+  .tagline {
+    font-family: 'GT Ultra Fine';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 176px;
+    line-height: 80%;
+    letter-spacing: -0.03em;
+
+    @include for-phone-only {
+      font-size: 70px;
+    }
+  }
+
+  .right-credits {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    height: 100%;
+
+    p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 150%;
+    }
+  }
+
+}
+
+.footer-travel-details {
+  display: flex;
+  padding: $space_80;
+  border-bottom: 1px solid $YUcanatisOrange50;
+
+  @include for-phone-only {
+    padding: 40px 20px;
+  }
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.main-footer {
+  padding: $space_80;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+
+  @include for-tablet {
+    flex-wrap: wrap;
+  }
+
+  @include for-phone-only {
+
+    padding: 40px 20px;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 125%;
+    color: #000000;
+    text-transform: capitalize;
+
+    .telephone {
+      color: #000000;
+      text-decoration: none;
+
+    }
+
+    address {
+      width: 60%;
+
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-buttons {
+    display: grid;
+    gap: 16px;
+  }
+
+  .contact-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include for-phone-only {
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.footer-list {
+  h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-bottom: 32px;
+
+      @include for-phone-only {
+        padding-bottom: 22px;
+      }
+
+      a {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 0px;
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-list {
+  ul {
+    li {
+      &:hover {
+        a {
+          border-bottom: 1px solid #000;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1366px) {
+  .main-footer {
+    gap: 40px;
+  }
+}

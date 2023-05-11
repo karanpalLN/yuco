@@ -1,0 +1,47 @@
+//  import
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/typography';
+
+
+
+/*partials*/
+@import 'partials/header';
+@import 'partials/footer';
+
+/*Components*/
+@import 'components/colors';
+@import 'components/buttons';
+@import 'components/banner';
+@import 'components/social-icons';
+@import 'components/masonary';
+@import 'components/slick';
+@import 'components/tabs';
+@import 'components/categories-card';
+@import 'components/deatiled-card';
+@import 'components/slider-button';
+@import 'components/testiminial-card';
+@import 'components/feature-block';
+@import 'components/book-grid-cards';
+@import 'components/comparision-block';
+@import 'components/paragragh-block';
+@import 'components/cta-banner';
+@import 'components/greeting-text';
+@import 'components/select-mood-box';
+@import 'components/cta-text-button';
+@import 'components/blog-post-card';
+@import 'components/right-img-description';
+@import 'components/select-boxes';
+@import 'components/full-width-tab-banner';
+@import 'components/half-width-tab-banner';
+@import 'components/quarter-width-tab-banner';
+@import 'components/comparisation-tabs-slider-block';
+@import 'components/email-us';
+@import 'components/footer-social-links';
+@import 'components/travel-search-nav';
+@import 'components/sidebar';
+@import 'components/listing-card';
+
+/* pages */
+@import 'pages/disablitites-block';
+@import 'pages/listing';

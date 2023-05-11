@@ -1,0 +1,38 @@
+.testimonial-card {
+    background-color: #7c7c591a;
+    border-radius: 16px;
+    margin: 0 12px;
+}
+
+.testimonial-cards {
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    .img-square-wrapper img {
+        border-radius: 16px;
+    }
+}
+
+.testimonial-card-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .users {
+        align-items: center;
+        gap: 14px;
+        justify-content: space-between;
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .facebook-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

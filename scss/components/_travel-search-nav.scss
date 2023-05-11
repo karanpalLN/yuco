@@ -1,0 +1,90 @@
+.banner {
+  form {
+    background-color: $white;
+    border: 1px solid rgba(49, 49, 49, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 8px 8px 24px;
+    position: relative;
+  }
+
+  .border-right {
+    width: 1px;
+    height: 58px;
+    opacity: 0.2;
+    background: $YUPrimary;
+  }
+
+  .distance-field {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+
+
+    .d-grid {
+      padding-left: 40px;
+    }
+
+    label {
+      font-family: 'Encode Sans Expanded';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 100%;
+      color: $YUPrimary;
+      opacity: 0.5;
+    }
+
+    input[type=search] {
+      border: 0;
+      font-family: 'Encode Sans Expanded';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: $YUPrimary;
+    }
+
+    .exchange-icon {
+      position: absolute;
+      left: calc(50% - 21px);
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .slect-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .select-items {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 8px 16px;
+      gap: 4px;
+      width: 100%;
+
+      .select-items label {
+        font-family: 'Encode Sans Expanded';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+
+      .options {
+        border: 0;
+        width: 100%;
+      }
+    }
+  }
+}

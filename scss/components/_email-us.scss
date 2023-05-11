@@ -1,0 +1,54 @@
+.email-us {
+  border-bottom: 1px solid $YUOddGreenLigher;
+  padding: $space_xl $space_80;
+
+  @include for-phone-only {
+    padding: 40px 20px;
+  }
+
+  .m-subscribe1__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 38px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+#cta_newsletter_email {
+  position: relative;
+  padding: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.27em;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0.8);
+
+  ::placeholder {
+    color: $black;
+    opacity: 0.7;
+  }
+}
+
+form.form-inline.m-subscribe1__form {
+  position: relative;
+
+}
+
+.email-btn {
+  background: url("../images/carbon_send-alt-filled.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

@@ -1,0 +1,44 @@
+.hero-banner {
+    background-color: $YUSatinLinen;
+}
+
+.free-quote-content {
+    font-family: 'Encode Sans Expanded';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: $YUDarkBrown;
+    position: relative;
+
+    p {
+        b {
+            font-family: 'Work Sans';
+            font-weight: 700;
+        }
+    }
+
+    h1 {
+        margin-top: 101px;
+        margin-bottom: 24px;
+    }
+
+    .font22 {
+        margin-bottom: 26.5px;
+    }
+
+    a {
+        &.btn {
+            &.btn-primary {
+                margin-top: 38.5px;
+
+                @include for-phone-only {
+                    margin-top: 22px;
+                }
+            }
+
+
+        }
+    }
+}

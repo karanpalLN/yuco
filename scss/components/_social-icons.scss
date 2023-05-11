@@ -1,0 +1,19 @@
+.social-links {
+    position: fixed;
+    right: 86px;
+    top: 336px;
+
+    @include for-phone-only {
+        right: 50px;
+    }
+}
+
+.social-links ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.social-links ul li {
+    list-style-type: none;
+    margin-bottom: 23px;
+}

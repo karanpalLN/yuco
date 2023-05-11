@@ -1,0 +1,73 @@
+.comparision .comparision-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 120px;
+}
+.comparision .comparision-block {
+  padding: 140px 60px 80px;
+  position: relative;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+.comparision .logo {
+  position: absolute;
+  left: calc(50% - 199.98px/2 + 0.24px);
+  top: -100px;
+}
+.comparision .comparision-list {
+  font-family: "Gantari";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+}
+.comparision li {
+  position: relative;
+  margin-bottom: 32px;
+}
+.comparision li::before {
+  content: "";
+  background-image: url("../images/checkmark.circle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -30px;
+}
+.comparision .secondary-comparision-list {
+  font-family: "Gantari";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  list-style: none;
+}
+.comparision .secondary-comparision-list li {
+  position: relative;
+  margin-bottom: 32px;
+}
+.comparision .secondary-comparision-list li::before {
+  content: "";
+  background-image: url("../images/checkmark.circle.png");
+  filter: invert(10);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -30px;
+}
+
+@media (max-width: 767px) {
+  .comparision .comparision-block {
+    height: auto;
+  }
+  .comparision .comparision-wrapper {
+    flex-wrap: wrap;
+  }
+}

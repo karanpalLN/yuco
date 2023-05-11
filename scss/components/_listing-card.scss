@@ -1,0 +1,22 @@
+.listing-card {
+  display: flex;
+
+  .card {
+    flex-direction: row;
+    border-radius: 16px;
+
+    .card-body {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    background-color: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,41 @@
+.cta-banner {
+  position: relative;
+
+  .cta-banner-img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    text-align: left;
+
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+
+  .cta-wrapper {
+    width: 60%;
+    color: $white;
+    position: relative;
+
+    @include for-tablet {
+      width: 100%;
+    }
+
+    @include for-phone-only {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .cta-banner {
+    h3 {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@mixin for-phone-only {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-tablet {
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin for-big-desktop-up {
+	@media (min-width: 1800px) {
+		@content;
+	}
+}
+
+.marquee_text {
+	font-size: 6rem;
+	font-weight: bold;
+	line-height: 7rem;
+	position: absolute;
+	top: 25px;
+	transform: translateY(-50%);
+}
+
+.js-marquee {
+	margin-right: 15px !important;
+}
+
+.font27 {
+	font-family: 'work Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 27px;
+	line-height: 140%;
+	text-align: center;
+	color: #4A403A;
+}
+
+.font22 {
+	font-family: 'Encode Sans Expanded';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 150%;
+	color: #332D17;
+	text-align: center;
+	text-transform: capitalize;
+
+	@include for-phone-only {
+		font-size: 18px;
+	}
+}
+
+
+
+.font24 {
+	font-family: 'work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: capitalize;
+	color: #4A403A;
+
+	@include for-phone-only {
+		font-size: 20px;
+	}
+}
+
+.font28 {
+	font-family: 'Arsenal';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 110%;
+	color: #423B30;
+
+	@include for-phone-only {
+		font-size: 24px;
+	}
+}
+
+.font16 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 110%;
+	color: #423B30;
+	opacity: 0.7;
+}
+
+.font14 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 110%;
+	letter-spacing: 0.04em;
+	text-transform: capitalize;
+}
+
+.font18 {
+	font-family: 'Work sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	text-transform: capitalize;
+}
+
+.font20 {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	letter-spacing: -0.01em;
+	color: #332D17;
+}
+
+.font32 {
+	font-family: 'Gantari';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 130%;
+	color: $YUDarkBrown;
+}
+
+.font33 {
+	font-family: 'GT Ultra Fine';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 33px;
+	line-height: 114%;
+	color: #000000;
+
+	@include for-phone-only {
+		font-size: 29px;
+	}
+}
+
+.text-highlight {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.pt-105 {
+	padding: 105px 0;
+}
+
+.ptb-40 {
+	padding: $space_xl 0;
+}
+
+.ptb-50 {
+	padding-top: $space_xxxl;
+	padding-bottom: $space_xxxl;
+}
+
+.card-horizontal {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.mb-81 {
+	margin-bottom: 81px;
+}
+
+
+.tilt-bg {
+	display: inline;
+	background: #FFCC01;
+	position: absolute;
+	transform: rotate(-1.1deg);
+}
+
+.ptb-200 {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	@include for-phone-only {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+}
+
+.xl-pb-40 {
+	padding-bottom: $space_xl;
+}
+
+.ptb-100-90 {
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	@include for-phone-only {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+}

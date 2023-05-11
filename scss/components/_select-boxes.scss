@@ -1,0 +1,67 @@
+.enquire-by-option {
+  h3 {
+    width: 58%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 80px;
+
+    @include for-phone-only {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+  }
+
+  .select-boxes-wrapper {
+    display: flex;
+    gap: 32px;
+
+    @include for-phone-only {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .select-boxes {
+      background-color: $white;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      border-radius: 16px;
+      justify-content: flex-start;
+      width: 33.3%;
+
+      @include for-phone-only {
+        width: 100%;
+      }
+
+      label {
+        text-transform: uppercase;
+      }
+
+      h5 {
+        text-align: left;
+        font-weight: 700;
+      }
+
+      .options-block {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $Grey;
+        padding: 12px 0px;
+        gap: 8px;
+      }
+
+      .duration-option {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        text-transform: capitalize;
+        color: $YUDarkerBrown;
+        width: 100%;
+        border: 0;
+      }
+    }
+  }
+}

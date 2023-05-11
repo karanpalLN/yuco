@@ -1,0 +1,40 @@
+.blog-post {
+  background: $Lotion;
+
+  .sub-title {
+    padding-top: 32px;
+    padding-bottom: 80px;
+    margin: auto;
+    width: 75%
+  }
+}
+
+.blogs-card {
+  border: 0;
+  background-color: transparent;
+
+  a {
+    text-decoration: none;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    padding-left: 0;
+    padding-right: 0;
+
+    h6 {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    p {
+      opacity: 0.8;
+      text-transform: uppercase;
+      color: $YUPrimary;
+
+    }
+  }
+}

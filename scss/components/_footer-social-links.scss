@@ -1,0 +1,96 @@
+.footer-social-links {
+  display: flex;
+  padding: $space_xl $space_80;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $YUcanatisOrange50;
+
+  @include for-phone-only {
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.left-block-links {
+  width: 75%;
+
+  @include for-phone-only {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 12px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+
+    li {
+      a {
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $black;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+}
+
+.right-block-social-links {
+  width: 25%;
+
+  @include for-phone-only {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+
+    @include for-phone-only {
+      justify-content: space-between;
+      padding-left: 0;
+
+    }
+  }
+}
+
+.left-block-links {
+  ul {
+    li {
+      a {
+        .first {
+          opacity: 0;
+        }
+
+        .last {
+          opacity: 1;
+        }
+
+        &:hover {
+          .first {
+            opacity: 1;
+          }
+
+          .last {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
